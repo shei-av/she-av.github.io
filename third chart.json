@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Indonesia GDP Growth",
+    "subtitle": ["Quarterly GDP change % Growth", "Source: ONS via ECO-API Chart by: Somebody"]
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "data": {"url": "https://api.economicsobservatory.com/idn/grow?vega"},
+
+  "mark": {
+    "type": "line",
+    "color": "rgb(210,54,54)"},
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  }
+}
+ 
